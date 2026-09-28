@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Женёк — конфиденциальность</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<h1>Политика конфиденциальности</h1>
+<p>Женёк — личный бот одного человека (владельца). Других пользователей у него нет.</p>
+<h2>Какие данные Google он использует</h2>
+<ul>
+<li><b>Календарь — только чтение</b> (<code>calendar.readonly</code>): чтобы показать владельцу его день.</li>
+<li><b>Запись — только в собственный календарь «Женёк»</b> (<code>calendar.app.created</code>): бот создаёт этот календарь сам и пишет в него события только после того, как владелец нажал кнопку подтверждения. В другие календари писать он не может — так устроена сама область доступа Google.</li>
+<li><b>Почта — только чтение</b> (<code>gmail.readonly</code>): отправитель, тема и короткий фрагмент новых писем для самого владельца. Тела писем бот не читает и ничего не отправляет.</li>
+</ul>
+<h2>Где хранятся данные</h2>
+<p>На частном сервере владельца. Данные не продаются, не используются для рекламы, и бот не обучает на них никаких моделей. Чтобы ответить владельцу, бот обращается к языковым моделям через их API — туда уходит только то, что нужно для ответа (например, события дня, о которых спросил владелец).</p>
+<h2>Как отозвать доступ</h2>
+<p>В любой момент: <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> → «zhenya» → «Удалить доступ». Календарь «Женёк» удаляется в настройках Google Календаря.</p>
+<p lang="en"><small>Zhenya is a private, single-user assistant. It reads the owner's calendar and mail (read-only), writes only to a calendar it created itself and only after the owner confirms, stores data on the owner's private server, and never sells it or uses it to train models; to answer the owner it sends only what the answer needs to a language model API. Access can be revoked at myaccount.google.com/permissions.</small></p>
+<p><a href="index.html">← на главную</a></p>
+<footer>Обновлено 28.09.2026</footer>
+</body></html>
